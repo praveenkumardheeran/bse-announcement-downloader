@@ -23,8 +23,8 @@ ann_date=0
 def page():
     ann_date=v.get()
     date_entry.config(state='disabled')
-    url=f"https://api.bseindia.com/BseIndiaAPI/api/AnnSubCategoryGetData/w?pageno=1&strCat=-1&strPrevDate={ann_date}&strScrip=&strSearch=P&strToDate={ann_date}&strType=C&subcategory=-1"
-    response=requests.get(url=url,headers=headers)
+    link=f"https://api.bseindia.com/BseIndiaAPI/api/AnnSubCategoryGetData/w?pageno=1&strCat=-1&strPrevDate={ann_date}&strScrip=&strSearch=P&strToDate={ann_date}&strType=C&subcategory=-1"
+    response=requests.get(url=link,headers=headers)
     count=0
     if response.status_code==200:
         try:
