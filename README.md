@@ -57,7 +57,7 @@ bse-announcement-downloader/
 Clone the repository
 
 ```bash
-git clone https://github.com/praveenkumardheeran/BSE_ANN_JSON.git
+git clone https://github.com/praveenkumardheeran/bse-announcement-downloader.git
 ```
 
 Install dependencies
